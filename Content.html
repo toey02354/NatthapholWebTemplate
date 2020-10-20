@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="myhtmlstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Content List
+  </title>
+</head>
+
+<body>
+  <!-- ************************ ทุกเพจ ************************* -->
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn">To Top</button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- navigator bar -->
+    <a class="title" href="homepage.html">Natthaphol's Website</a>
+    <div class="navigatorbar">
+      <a href="homepage.html">Home</a>
+      <a style="background-color:green;" href="Content.html">Contents</a>
+      <a href="Contact.html">Contact</a>
+      <a href="About.html">About</a>
+      <a class="Login" href="register.html">Resigter</a>
+    </div>
+  <!-- ************************ ทุกเพจ ************************* -->
+
+  <div class="row">
+    <div class="leftrow">
+      <div class="navrow">
+        <a  href="#">Link 1</a>
+        <a  href="#">Link 2</a>
+        <a  href="#">Link 3</a>
+        <a  href="#">Link 4</a>
+        <a  href="#">Link 5</a>
+        <a  href="#">Link 6</a>
+      </div>
+    </div>
+    <div class="rightrow">
+      <div class="forum">
+        <h2>Kanazawa Station</h2>
+        <h5>December 2019</h5>
+        <img src="image\IMG_1562.HEIC">
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+      <div class="forum">
+        <h2>Sightseeing on the Shinkanzen (Kanazawa-Saitama)</h2>
+        <h5>December 2019</h5>
+        <img src="image\IMG_1581.HEIC">
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

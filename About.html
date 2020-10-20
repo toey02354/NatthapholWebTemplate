@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="myhtmlstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    About Me
+  </title>
+</head>
+
+<body>
+<!-- ************************ ทุกเพจ ************************* -->
+  <!-- scroll to top button -->
+  <button onclick="topFunction()" id="myBtn">To Top</button>
+  <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- navigator bar -->
+  <a class="title" href="homepage.html">Natthaphol's Website</a>
+  <div class="navigatorbar">
+    <a href="homepage.html">Home</a>
+    <a href="Content.html">Contents</a>
+    <a href="Contact.html">Contact</a>
+    <a style="background-color:green;" href="About.html">About</a>
+    <a class="Login" href="register.html">Resigter</a>
+  </div>
+<!-- ************************ ทุกเพจ ************************* -->
+
+
+  <p>My name is <a style="color:red;">Natthaphol Uthmuphirat</a>.
+    <br>I was graduated from Telecommunication Engineering school.
+    <br>My GPAX was 3.70
+    <br>
+    <br>My Experiences
+    <br>1. Exchanged in gPBL 2018 program at SIT, Saitama, Japan for 10 days.
+    <br>2. Exchanged in CommTECH Highlight camp at Surabaya, Indonesia for 14 days.
+    <br>3. Internship at Kanazawa Institute of Technology, Ishikawa, Japan for 4 months.
+  </p>
+  <img src="image\IMG_1847.jpg" alt="Tokyo Tower" title="I was on the Tokyo Tower">
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newStyle.css">
+    <title>Natthaphol's New Template</title>
+</head>
+<body>
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn">Go Top</button>
+    <button onclick="contactMe()" id="myContact">Contact</button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      let contactBtn = document.getElementById("myContact")
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+          contactBtn.style.display = "none";
+        } else {
+          mybutton.style.display = "none";
+          contactBtn.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.documentElement.scrollTop = 0;
+      }
+      function contactMe() {
+        window.location.href = "https://www.facebook.com/dekaiser02354/";
+      }
+    </script>
+    <!-- *** -->
+    <div class="header">
+        <a class="logo" href="https://ww.google.com">Logo Here</a>
+        <a class="navigatortab">
+            <a class="link link1" href="Home.html">Home</a>
+            <a class="link link1" href="Content.html">Contents</a>
+            <a class="link link1" href="Contact.html">Contact</a>
+            <a class="link link1" href="About.html">About</a>
+        </a>
+        <a class="login register" href="register.html">Register</a>
+        <a class="login login1">Log-In</a>
+    </div>
+
+    <div class="column1">
+        <div class="headpic">Natthaphol Web Template</div>
+        <div class="bgimg">
+            <img src="image/IMG_2231.jpg">
+        </div>
+    </div>
+
+    <div class="contents">
+        <p id="title">Contents gonna be putting here</p>
+        <div class="row">
+            <div id="paragraph">
+                Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to your reader? The information in each paragraph must be related to that idea. In other words, your paragraphs should remind your reader that there is a recurrent relationship between your thesis and the information in each paragraph. A working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper.
+            </div>
+            <div id="paragraph">
+            The decision about what to put into your paragraphs begins with the germination of a seed of ideas; this “germination process” is better known as brainstorming. There are many techniques for brainstorming; whichever one you choose, this stage of paragraph development cannot be skipped. Building paragraphs can be like building a skyscraper: there must be a well-planned foundation that supports what you are building. Any cracks, inconsistencies, or other corruptions of the foundation can cause your whole paper to crumble.
+            </div>
+        </div>
+        <br>
+        <div class="picture">
+            <img src="image/IMG_1770.jpg" alt="I was on the Tokyo Tower.">
+        </div>
+    </div>
+    
+    <div class="footer-one">
+        <div id="text-footer-one">About Me</div>
+        <div id="footer-row">
+            <!-- About Me  -->
+            <div id="inside-footer-row-about">
+                <div id="text2-footer-one">About Me</div>
+                <div>Natthaphol Uthumphirat (Toey)</div>
+                <div>Telecommunication Engineering</div>
+                <div>But Interested in coding more</div>
+            </div>
+            <!-- Languanges -->
+            <div id="inside-footer-row-spokenlang">
+                <div id="text2-footer-one">Languanges Spoken</div>
+                <div>1. Thai</div>
+                <div>2. English</div>
+                <div>3. Japanese</div>
+            </div>
+            <!-- Coding Languages -->
+            <div id="inside-footer-row-codinglang">
+                <div id="text2-footer-one">Coding Languages</div>
+                <div>1. HTML, CSS, Javascript</div>
+                <div>2. C/C++</div>
+                <div>3. Python</div>
+            </div>
+            <!-- Contact Me -->
+            <div id="inside-footer-row-contact">
+                <div id="text2-footer-one">Contact Me</div>
+                <div id="buttonC">
+                    <div><a id="facebook" href="https://www.facebook.com/dekaiser02354/">Facebook</a></div>
+                    <div><a id="lineM" href="">Line</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span></span>
+
+    <div class="footer-two">
+            <div id='text-footer-two'>Created by Natthaphol Uthumphirat</div>
+            <div id='text-footer-two'>nattapoln02354@gmail.com</div>
+    </div>
+        
+</body>
+</html>

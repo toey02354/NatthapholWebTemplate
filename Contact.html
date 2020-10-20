@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="myhtmlstyle.css">
+  <script src="myjs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    My Contact (JS test)
+  </title>
+</head>
+
+<body>
+  <!-- ************************ all page ************************* -->
+    <!-- scroll to top button -->
+    <button onclick="topFunction()" id="myBtn">To Top</button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- navigator bar -->
+    <a class="title" href="homepage.html">Natthaphol's Website</a>
+    <div class="navigatorbar">
+      <a href="homepage.html">Home</a>
+      <a href="Content.html">Contents</a>
+      <a style="background-color:green;" href="Contact.html">Contact</a>
+      <a href="About.html">About</a>
+      <a class="Login" href="register.html">Resigter</a>
+    </div>
+  <!-- ************************ all page ************************* -->
+
+<div class="testforum">
+  <p id="test">test</p>
+  <p id="test2"></p>
+  <p id="name"></p>
+  <button type="button" onclick="test1()">test</button>
+  <button type="button" onclick="test2()">test2</button>
+  <button type="button" onclick="alert_test()">alert test</button>
+  <button type="button" onclick="name1()">my name</button>
+</div>
+
+<div class="getInput">
+  <form onsubmit="return name3()" name="myForm" method="POST" action="something.php">
+    <label>name:</label>
+    <input type="text" id="getName" name="getName" placeholder="Enter your Full Name">
+    <input type="submit" value="Submit">
+    <p id="printName"></p>
+  </form>
+</div>
+
+</body>
+</html>

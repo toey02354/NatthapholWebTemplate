@@ -1,110 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="newStyle.css">
-    <title>    My Contact (JS test)  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="newStyle.css">
+  <title>    My Contact (JS test)  </title>
 </head>
 
 <body>
-    <!-- scroll to top button -->
-    <button onclick="topFunction()" id="myBtn">Go Top</button>
-    <script>
-      var mybutton = document.getElementById("myBtn");
-      let contactBtn = document.getElementById("myContact")
-      window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-        if (document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-          contactBtn.style.display = "none";
-        } else {
-          mybutton.style.display = "none";
-          contactBtn.style.display = "none";
-        }
+  <!-- scroll to top button -->
+  <button onclick="topFunction()" id="myBtn">Go Top</button>
+  <script>
+    var mybutton = document.getElementById("myBtn");
+    let contactBtn = document.getElementById("myContact")
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        contactBtn.style.display = "none";
+      } else {
+        mybutton.style.display = "none";
+        contactBtn.style.display = "none";
       }
-      function topFunction() {
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <!-- *** -->
-    <div class="header">
-        <a class="logo" href="https://ww.google.com">Logo Here</a>
-        <a class="navigatortab">
-            <a class="link link1" href="Home.html">Home</a>
-            <a class="link link1" href="Content.html">Contents</a>
-            <a class="link link1" href="Contact.html">Contact</a>
-            <a class="link link1" href="About.html">About</a>
-        </a>
-        <a class="login register" href="register.html">Register</a>
-        <a class="login login1">Log-In</a>
-    </div>
-    <!-- End of every Page Copy -->
+    }
+    function topFunction() {
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- *** -->
+  <div class="header">
+    <a class="logo" href="https://ww.google.com">Logo Here</a>
+    <a class="navigatortab">
+      <a class="link link1" href="Home.html">Home</a>
+      <a class="link link1" href="Content.html">Contents</a>
+      <a class="link link1" href="Contact.html">Contact</a>
+      <a class="link link1" href="About.html">About</a>
+    </a>
+    <a class="login register" href="register.html">Register</a>
+    <a class="login login1">Log-In</a>
+  </div>
+  <!-- End of every Page Copy -->
 
-<div class="testforum">
-  <p id="test">test</p>
-  <p id="test2"></p>
-  <p id="name"></p>
-  <button type="button" onclick="test1()">test</button>
-  <button type="button" onclick="test2()">test2</button>
-  <button type="button" onclick="alert_test()">alert test</button>
-  <button type="button" onclick="name1()">my name</button>
-</div>
+  <div class="testforum">
+    <p id="test">test</p>
+    <p id="test2"></p>
+    <p id="name"></p>
+    <button type="button" onclick="test1()">test</button>
+    <button type="button" onclick="test2()">test2</button>
+    <button type="button" onclick="alert_test()">alert test</button>
+    <button type="button" onclick="name1()">my name</button>
+  </div>
 
-<div class="getInput">
-  <form onsubmit="return name3()" name="myForm" method="POST" action="something.php">
-    <label>name:</label>
-    <input type="text" id="getName" name="getName" placeholder="Enter your Full Name">
-    <input type="submit" value="Submit">
-    <p id="printName"></p>
-  </form>
-</div>
+  <div class="getInput">
+    <form onsubmit="return name3()" name="myForm" method="POST" action="something.php">
+      <label>name:</label>
+      <input type="text" id="getName" name="getName" placeholder="Enter your Full Name">
+      <input type="submit" value="Submit">
+      <p id="printName"></p>
+    </form>
+  </div>
 
-<!-- Footer -->
-<span class="top_span"></span>
-<div class="footer-one">
-  <div id="text-footer-one">About Me</div>
-  <div id="footer-row">
-      <!-- About Me  -->
-      <div id="inside-footer-row-about">
+  <!-- Footer -->
+  <span class="top_span"></span>
+  <div class="footer-one">
+    <div id="text-footer-one">About Me</div>
+    <div id="footer-row">
+        <!-- About Me  -->
+        <div id="inside-footer-row-about">
           <div id="text2-footer-one">About Me</div>
           <div>Natthaphol Uthumphirat (Toey)</div>
           <div>Telecommunication Engineering</div>
           <div>But Interested in coding more</div>
-      </div>
-      <!-- Languanges -->
-      <div id="inside-footer-row-spokenlang">
+        </div>
+        <!-- Languanges -->
+        <div id="inside-footer-row-spokenlang">
           <div id="text2-footer-one">Languanges Spoken</div>
           <div>1. Thai</div>
           <div>2. English</div>
           <div>3. Japanese</div>
-      </div>
-      <!-- Coding Languages -->
-      <div id="inside-footer-row-codinglang">
+        </div>
+        <!-- Coding Languages -->
+        <div id="inside-footer-row-codinglang">
           <div id="text2-footer-one">Coding Languages</div>
           <div>1. HTML, CSS, Javascript</div>
           <div>2. C/C++</div>
           <div>3. Python</div>
-      </div>
-      <!-- Contact Me -->
-      <div id="inside-footer-row-contact">
+        </div>
+        <!-- Contact Me -->
+        <div id="inside-footer-row-contact">
           <div id="text2-footer-one">Contact Me</div>
           <div id="buttonC">
-              <div><a id="facebook" href="https://www.facebook.com/dekaiser02354/">Facebook</a></div>
-              <div><a id="lineM" href="">Line</a></div>
+            <div><a id="facebook" href="https://www.facebook.com/dekaiser02354/">Facebook</a></div>
+            <div><a id="lineM" href="">Line</a></div>
           </div>
       </div>
+    </div>
   </div>
-</div>
 
-<span class="span_footers_spliter"></span>
+  <span class="span_footers_spliter"></span>
 
-<div class="footer-two">
-      <div id='text-footer-two'>Created by Natthaphol Uthumphirat</div>
-      <div id='text-footer-two'>nattapoln02354@gmail.com</div>
-</div>
-<!-- footer -->
+  <div class="footer-two">
+    <div id='text-footer-two'>Created by Natthaphol Uthumphirat</div>
+    <div id='text-footer-two'>nattapoln02354@gmail.com</div>
+  </div>
+  <!-- footer -->
 
 </body>
 </html>

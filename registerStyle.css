@@ -92,7 +92,7 @@ img {
 
 /* ส่วนด้านซ้าย รูป+ข้อความ */
 .login-left {
-    width: 100%;
+    width: 100vw;
     height: 93vh;
     display: flex;
     justify-content: center;
@@ -103,8 +103,6 @@ img {
 .login-left img {
     opacity: 0.3;
     object-fit: cover;
-    /* height: 100%;
-    width: 100%; */
     display: block;
     transition: 770ms cubic-bezier(0.51,0.04,0.12,0.99);
     object-position: left;

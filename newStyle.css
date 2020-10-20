@@ -34,14 +34,18 @@ img{
     padding: 14px 16px;
     overflow: hidden;
 }
-.header a.logo {
+img.logoHere {
+    height: 16px;
+    width: auto;
+}
+/* .header a.logo {
     margin-left: 16px;
     text-transform: uppercase;
     text-decoration: none;
     color: antiquewhite;
     float: left;
     letter-spacing: 0.1405em;
-}
+} */
 .header a.navigatortab {
     padding-left: 15%;
     display: inline;

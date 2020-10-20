@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="myhtmlstyle.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    Content List
-  </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newStyle.css">
+    <title>    Content List  </title>
 </head>
 
 <body>
-  <!-- ************************ ทุกเพจ ************************* -->
     <!-- scroll to top button -->
-    <button onclick="topFunction()" id="myBtn">To Top</button>
+    <button onclick="topFunction()" id="myBtn">Go Top</button>
     <script>
       var mybutton = document.getElementById("myBtn");
+      let contactBtn = document.getElementById("myContact")
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
         if (document.documentElement.scrollTop > 20) {
           mybutton.style.display = "block";
+          contactBtn.style.display = "none";
         } else {
           mybutton.style.display = "none";
+          contactBtn.style.display = "none";
         }
       }
       function topFunction() {
         document.documentElement.scrollTop = 0;
       }
     </script>
-    <!-- navigator bar -->
-    <a class="title" href="homepage.html">Natthaphol's Website</a>
-    <div class="navigatorbar">
-      <a href="homepage.html">Home</a>
-      <a style="background-color:green;" href="Content.html">Contents</a>
-      <a href="Contact.html">Contact</a>
-      <a href="About.html">About</a>
-      <a class="Login" href="register.html">Resigter</a>
+    <!-- *** -->
+    <div class="header">
+        <a class="logo" href="https://ww.google.com">Logo Here</a>
+        <a class="navigatortab">
+            <a class="link link1" href="Home.html">Home</a>
+            <a class="link link1" href="Content.html">Contents</a>
+            <a class="link link1" href="Contact.html">Contact</a>
+            <a class="link link1" href="About.html">About</a>
+        </a>
+        <a class="login register" href="register.html">Register</a>
+        <a class="login login1">Log-In</a>
     </div>
-  <!-- ************************ ทุกเพจ ************************* -->
-
+    <!-- End of every Page Copy -->
+    
   <div class="row">
     <div class="leftrow">
       <div class="navrow">

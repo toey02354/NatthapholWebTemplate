@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="newStyle.css">
     <title>Natthaphol's New Template</title>
 </head>
+
 <body>
     <!-- scroll to top button -->
     <button onclick="topFunction()" id="myBtn">Go Top</button>
-    <button onclick="contactMe()" id="myContact">Contact</button>
     <script>
       var mybutton = document.getElementById("myBtn");
       let contactBtn = document.getElementById("myContact")
@@ -26,9 +27,6 @@
       function topFunction() {
         document.documentElement.scrollTop = 0;
       }
-      function contactMe() {
-        window.location.href = "https://www.facebook.com/dekaiser02354/";
-      }
     </script>
     <!-- *** -->
     <div class="header">
@@ -42,6 +40,7 @@
         <a class="login register" href="register.html">Register</a>
         <a class="login login1">Log-In</a>
     </div>
+    <!-- End of every Page Copy -->
 
     <div class="column1">
         <div class="headpic">Natthaphol Web Template</div>
@@ -65,8 +64,10 @@
             <img src="image/IMG_1770.jpg" alt="I was on the Tokyo Tower.">
         </div>
     </div>
-    
-    <div class="footer-one">
+
+      <!-- Footer -->
+      <span class="top_span"></span>
+      <div class="footer-one">
         <div id="text-footer-one">About Me</div>
         <div id="footer-row">
             <!-- About Me  -->
@@ -101,12 +102,12 @@
         </div>
     </div>
 
-    <span></span>
+    <span class="span_footers_spliter"></span>
 
     <div class="footer-two">
             <div id='text-footer-two'>Created by Natthaphol Uthumphirat</div>
             <div id='text-footer-two'>nattapoln02354@gmail.com</div>
     </div>
-        
+    <!-- footer -->
 </body>
 </html>

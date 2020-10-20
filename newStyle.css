@@ -38,14 +38,14 @@ img.logoHere {
     height: 16px;
     width: auto;
 }
-/* .header a.logo {
+.header a.logo {
     margin-left: 16px;
     text-transform: uppercase;
     text-decoration: none;
     color: antiquewhite;
     float: left;
     letter-spacing: 0.1405em;
-} */
+}
 .header a.navigatortab {
     padding-left: 15%;
     display: inline;

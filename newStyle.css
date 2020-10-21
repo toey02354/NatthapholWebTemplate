@@ -30,7 +30,7 @@ img{
 
 /*** header ***/
 .header {
-    background: linear-gradient(-110deg,rgb(110, 38, 38),rgb(102, 21, 21));
+    /* background: linear------------gradient(-110deg,rgb(110, 38, 38),rgb(102, 21, 21)); */
     font-size: 16px;
     padding: 14px 16px;
     overflow: hidden;
@@ -231,24 +231,32 @@ span {
 }
 
 /********** Contents Page **********/
-h2 {
-    font-size: 30px;
-    color: rgb(133, 0, 0);
+.container{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-template-rows: minmax(300px,auto-fill);
 }
-.rightrow {
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 80%;
+.forum img{
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-.forum {
-    padding-top: 20px;
-    justify-items: center;
+.forum img:hover{
+    opacity: 1;
+}
+.forum{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.forum3,
-.forum2 {
-    opacity: 0;
-    transition: all 0.7s ease;
+.message{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    /* display: none; */
 }
 
 /********** Contact Page **********/

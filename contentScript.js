@@ -1,12 +1,10 @@
-let forum2 = document.querySelector(".forum2");
-let forum3 = document.querySelector(".forum3");
-window.addEventListener('scroll', ()=>{
-  let scrollValue = window.scrollY;
-  console.log(scrollValue);
-  if (scrollValue >= 750) {
-    forum2.style.opacity = 1;
-  }
-  if (scrollValue >= 1800) {
-    forum3.style.opacity = 1;
-  }
-})
+let messages = document.querySelector(".forum .message");
+let images = document.querySelector(".forum .imgBG");
+images.addEventListener("mouseover",mouseOver);
+images.addEventListener("mouseout",mouseOut);
+function mouseOver(){
+  messages.style.opacity = 0;
+}
+function mouseOut(){
+  messages.style.opacity = 1;
+}

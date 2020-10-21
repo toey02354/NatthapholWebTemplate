@@ -99,6 +99,7 @@ section video {
     /* object-fit: cover; */
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 .headpic{
     font-size: 40px;
@@ -137,7 +138,7 @@ section video {
     height: 75vh;
     object-fit: cover;
     opacity: 0;
-    transition: 0.5s;
+    transition: all 0.5s ease;
 }
 
 /********** footer **********/
@@ -177,26 +178,31 @@ span {
     height: 1px;
 }
 /* footer-one */
-.footer-one #facebook {
+.footer-one .buttonD{
     display: flex;
-    padding: 6px 6px;
-    max-width: 150px;
+    padding: 6px 0;
+    margin: 2px 0;
+    width: 150px;
+    text-transform: uppercase;
     text-decoration: none;
     color: inherit;
     justify-content: center;
     align-content: center;
-    background-color: #3B5998;
+    overflow: hidden;
 }
-.footer-one #lineM {
-    display: flex;
-    margin-top: 5px;
-    padding: 6px 6px;
-    max-width: 150px;
-    text-decoration: none;
-    color: inherit;
-    justify-content: center;
-    align-content: center;
-    background-color: #00b900;
+.facebook {
+    border:4px solid #3B5998;
+    transition: all 0.5s ease;
+}
+.facebook:hover{
+    background: #3B5998;
+}
+.lineM {
+    border: 4px solid #00b900;
+    transition: all 0.5s ease;
+}
+.lineM:hover {
+    background: #00b900;
 }
 
 /* footer-one rows divide */
@@ -219,6 +225,19 @@ span {
 }
 .span_footers_spliter {
     background-color: bisque;
+}
+
+/********** Contents Page **********/
+
+.rightrow {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+}
+.forum {
+    padding-top: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 /********** About Page **********/

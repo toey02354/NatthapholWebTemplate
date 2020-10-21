@@ -79,13 +79,6 @@ img.logoHere {
     cursor: pointer;
 }
 /********** HomePage **********/
-section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
 /*** column 1 ***/
 .column1 {
     display: flex;
@@ -94,12 +87,16 @@ section {
     align-items: center;
     overflow: hidden;
 }
-.bgimg{
-    display: block;
-    opacity: 0.3;
-    height: 80vh;
-    object-fit: cover;
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
     overflow: hidden;
+}
+section video {
+    object-fit: cover;
 }
 .headpic{
     font-size: 40px;
@@ -111,7 +108,7 @@ section {
 }
 /*** content ***/
 .contents {
-    padding: 20px 40px;
+    padding: 100px 40px;
 }
 .contents{
     text-align: center;

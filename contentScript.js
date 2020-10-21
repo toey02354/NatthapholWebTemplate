@@ -3,7 +3,7 @@ let forum3 = document.querySelector(".forum3");
 window.addEventListener('scroll', ()=>{
   let scrollValue = window.scrollY;
   console.log(scrollValue);
-  if (scrollValue >= 800) {
+  if (scrollValue >= 750) {
     forum2.style.opacity = 1;
   }
   if (scrollValue >= 1800) {

@@ -228,6 +228,10 @@ span {
 }
 
 /********** Contents Page **********/
+h2 {
+    font-size: 30px;
+    color: rgb(133, 0, 0);
+}
 .rightrow {
     padding-left: 10%;
     padding-right: 10%;

@@ -79,6 +79,13 @@ img.logoHere {
     cursor: pointer;
 }
 /********** HomePage **********/
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
 /*** column 1 ***/
 .column1 {
     display: flex;
@@ -214,7 +221,7 @@ span {
 
 /********** About Page **********/
 .messages {
- margin-left: 3rem;
+    padding-left: 10rem;
 }
 .messages .img_about{
     width: 50vw;

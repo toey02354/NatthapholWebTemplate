@@ -146,16 +146,17 @@ section video {
 /********** footer **********/
 .footer-one{
     margin: none;
-    padding: 5%;
-    height: 18vh;
+    padding: 5% 0 0 5%;
+    min-height: 200px;
     background-color: rgb(24, 26, 26);
     letter-spacing: 0.082em;
 }
 .footer-two{
     margin: none;
-    padding: 5%;
-    height: 5vh;
+    padding: 5% 5% 5% 5%;
+    height: 100%;
     background-color: rgb(24, 26, 26);
+    border-top: 2px solid #999999;
 }
 #text-footer-one {
     text-align: center;
@@ -173,11 +174,6 @@ section video {
 #text2-footer-one {
     font-size: 20px;
     padding-bottom: 10px;
-}
-span {
-    display: flex;
-    width: 100%;
-    height: 1px;
 }
 /* footer-one */
 .buttonD{
@@ -241,10 +237,12 @@ span {
 .forum img{
     opacity: 0.4;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
-.forum img:hover{
+.forum:hover img{
     opacity: 1;
+}
+.forum:hover .message{
+    opacity: 0;
 }
 .forum{
     display: flex;
@@ -256,7 +254,6 @@ span {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     position: absolute;
-    /* display: none; */
 }
 
 /********** Contact Page **********/

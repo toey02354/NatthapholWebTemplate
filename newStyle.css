@@ -146,6 +146,7 @@ section video {
 /********** footer **********/
 .footer-one{
     margin: none;
+    /* margin: 100px 0 0 0; */
     padding: 5% 0 0 5%;
     min-height: 200px;
     background-color: rgb(24, 26, 26);

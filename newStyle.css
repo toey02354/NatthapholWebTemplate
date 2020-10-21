@@ -111,7 +111,7 @@ section video {
 }
 /*** content ***/
 .contents {
-    padding: 100px 40px;
+    padding: 80px 40px;
 }
 .contents{
     text-align: center;
@@ -133,10 +133,11 @@ section video {
 }
 .contents .picture1 {
     overflow: hidden;
-    display: block;
+    display: flex;
     height: 75vh;
     object-fit: cover;
     opacity: 0;
+    transition: 0.5s;
 }
 
 /********** footer **********/

@@ -1,16 +1,16 @@
 let video = document.querySelector(".column1");
 let fadeDivider = 900;
+let piceo = document.querySelector('.picture1');
+let fadeDivider2 = 1200;
 window.addEventListener('scroll', () => {
     let scrollvalue = window.scrollY;
-    opacityValue = 1 - scrollvalue/fadeDivider;
-    video.style.opacity = opacityValue;
-})
-
-let fadeDivider2 = 600;
-let pictures = document.querySelector(".picture1");
-window.addEventListener('scroll', () => {
-    let scrollValue2 = window.scrollY;
-    console.log(scrollValue2);
-    opacityValue2 = scrollValue2/fadeDivider;
-    pictures.style.opacity = opacityValue2;
+    opacityValue1 = 1 - scrollvalue/fadeDivider;
+    opacityValue2 = scrollvalue/fadeDivider2;
+    console.log(scrollvalue)
+    if (scrollvalue >= 100){
+        video.style.opacity = opacityValue1;
+    }
+    if (scrollvalue >= 900){
+        piceo.style.opacity = opacityValue2;
+    }
 })

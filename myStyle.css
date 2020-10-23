@@ -22,7 +22,7 @@ img{
     border: none;
     outline: none;
     background: linear-gradient(45deg,rgb(51, 105, 51),rgb(30, 82, 30));
-    color: white;
+    color: inherit;
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
@@ -31,35 +31,41 @@ img{
 
 /*** header ***/
 .header {
-    /* background: linear------------gradient(-110deg,rgb(110, 38, 38),rgb(102, 21, 21)); */
     font-size: 16px;
     padding: 14px 16px;
     overflow: hidden;
+    /* background: linear-gradient(135deg, rgb(11, 11, 11) 82%, rgb(24, 26, 26) 80%); */
+    background: linear-gradient(135deg, rgb(24, 26, 26) 80%, rgb(11, 11, 11) 80%);
+    /* background:
+        linear-gradient(110deg, rgb(180, 0, 0) 16.5%, transparent 16.5%), 
+        linear-gradient(110deg, white 33%, transparent 33%), 
+        linear-gradient(110deg, rgb(0, 0, 180) 66%, transparent 66%), 
+        linear-gradient(110deg, white 82.5%, transparent 82.5%), 
+        linear-gradient(110deg, rgb(180, 0, 0) 100%, transparent 100%); */
 }
 img.logoHere {
     height: 16px;
     width: auto;
 }
 .header a.logo {
-    margin: 0 16px 0 0;
+    margin: 0 2% 0 0;
     text-transform: uppercase;
     text-decoration: none;
-    color: antiquewhite;
+    color: inherit;
     float: right;
     letter-spacing: 0.1405em;
 }
 .header a.navigatortab {
-    padding-left: 15%;
     display: flex;
 }
 .header a.link {
-    padding: 0 16px 0 16px;
+    margin: 0 16px 0 16px;
     letter-spacing: 0.1405em;
     text-decoration: none;
     text-transform: uppercase;
     color: inherit;
     float: left;
-    align-items: flex-end;
+    z-index: 1;
 }
 /* .header a.login{
     letter-spacing: 0.1405em;
@@ -87,19 +93,20 @@ img.logoHere {
 
 
 /********** footer **********/
+.footer{
+    background-color: rgb(24, 26, 26);
+}
 .footer-one{
     margin: none;
     /* margin: 100px 0 0 0; */
     padding: 5% 0 5% 5%;
     min-height: 200px;
-    background-color: rgb(24, 26, 26);
     letter-spacing: 0.082em;
 }
 .footer-two{
     margin: none;
     padding: 5% 5% 5% 5%;
     height: 100%;
-    background-color: rgb(24, 26, 26);
     border-top: 2px solid #999999;
 }
 #text-footer-one {
@@ -135,16 +142,12 @@ img.logoHere {
 }
 .facebook {
     border:2px solid #3B5998;
-    transition: all 0.5s ease;
-}
-.facebook:hover{
+    /* transition: all 0.5s ease; */
     background: #3B5998;
 }
 .lineM {
     border: 2px solid #00b900;
-    transition: all 0.5s ease;
-}
-.lineM:hover {
+    /* transition: all 0.5s ease; */
     background: #00b900;
 }
 

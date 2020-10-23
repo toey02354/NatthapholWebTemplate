@@ -15,7 +15,7 @@
     opacity: 1;
 }
 .forum:hover .message{
-    opacity: 0;
+    display: none;
 }
 .forum{
     display: flex;

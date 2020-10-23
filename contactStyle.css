@@ -1,0 +1,40 @@
+@import "allStyle.css";
+
+.testforum,
+.getInput{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30px;
+}
+#getName {
+    padding: 5px 7px;
+    margin: 0 1rem;
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 0;
+}
+input:placeholder-shown {
+    letter-spacing: 0.05em;
+}
+#getName:focus {
+    outline: none;
+}
+#getNameSubmit {
+    width: 80px;
+    border: 0;
+    padding: 5px 7px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+}
+.buttonA {
+    text-transform: uppercase;
+    display: block;
+    width: 150px;
+    border: 0;
+    padding: 5px 7px;
+    margin: 10px 0;
+    border-radius: 0;
+    cursor: pointer;
+}

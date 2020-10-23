@@ -1,0 +1,30 @@
+@import "allStyle.css";
+
+.container{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    grid-template-rows: minmax(300px,auto-fill);
+}
+.forum img{
+    opacity: 0.4;
+    cursor: pointer;
+}
+.forum:hover img{
+    opacity: 1;
+}
+.forum:hover .message{
+    opacity: 0;
+}
+.forum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: absolute;
+}

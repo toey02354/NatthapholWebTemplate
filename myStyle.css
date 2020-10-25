@@ -43,18 +43,6 @@ img{
         linear-gradient(110deg, white 82.5%, transparent 82.5%), 
         linear-gradient(110deg, rgb(180, 0, 0) 100%, transparent 100%); */
 }
-img.logoHere {
-    height: 16px;
-    width: auto;
-}
-.header a.logo {
-    margin: 0 2% 0 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: inherit;
-    float: right;
-    letter-spacing: 0.1405em;
-}
 .header a.navigatortab {
     display: flex;
 }
@@ -67,18 +55,14 @@ img.logoHere {
     float: left;
     z-index: 1;
 }
-/* .header a.login{
-    letter-spacing: 0.1405em;
-    float: right;
+.header a.logo {
+    margin: 0 16px 0 16px;
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
+    float: right;
+    letter-spacing: 0.1405em;
 }
-.header a.login1 {
-    padding-right: 15px;
-    text-decoration: none;
-    color: inherit;
-} */
 
 /* hover */
 .header a.link:hover {
@@ -95,13 +79,13 @@ img.logoHere {
 /********** footer **********/
 .footer{
     background-color: rgb(24, 26, 26);
+    min-height: fit-content;
+    letter-spacing: 0.022em;
 }
 .footer-one{
     margin: none;
-    /* margin: 100px 0 0 0; */
-    padding: 5% 0 5% 5%;
+    padding: 5% 5% 5% 5%;
     min-height: 200px;
-    letter-spacing: 0.082em;
 }
 .footer-two{
     margin: none;
@@ -115,16 +99,15 @@ img.logoHere {
     padding-bottom: 10px;
     font-size: 30px;
 }
+#text2-footer-one {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
 #text-footer-two {
-    letter-spacing: 0.082em;
     text-align: center;
     justify-items: center;
     padding-bottom: 10px;
     font-size: 20px;
-}
-#text2-footer-one {
-    font-size: 20px;
-    padding-bottom: 10px;
 }
 /* footer-one */
 .buttonD{
@@ -157,18 +140,27 @@ img.logoHere {
 #footer-row #inside-footer-row-spokenlang,
 #footer-row #inside-footer-row-codinglang{
     float: left;
-    text-align: justify;
     width: 25%;
-    /* padding-left: 2.5%;
-    padding-right: 2.5%; */
  }
-#item1 #footer-row {
-    display: table;
-}
-.top_span {
-    margin-top: 2rem;
-    color: inherit;
-}
-.span_footers_spliter {
-    background-color: bisque;
+
+@media only screen and (max-width: 600px) {
+    .header a.logo {
+        float: left;
+        margin: 14px 16px 14px 16px;
+    }
+    .footer {
+        min-height: 100vh;
+    }
+    #footer-row #inside-footer-row-contact,
+    #footer-row #inside-footer-row-about,
+    #footer-row #inside-footer-row-spokenlang,
+    #footer-row #inside-footer-row-codinglang{
+        float: left;
+        width: 100%;
+    }
+    .footer-two {
+        border-top: 0;
+        float: left;
+    }
+
 }

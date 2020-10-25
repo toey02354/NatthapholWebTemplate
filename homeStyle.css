@@ -23,13 +23,12 @@ section video {
     height: 100%;
     z-index: -1;
 }
-.headpic{
+.headtext{
     font-size: 40px;
     text-transform: uppercase;
-    letter-spacing: 0.1405em;
+    letter-spacing: 0.022em;;
     display: flex;
     color: #fff;
-    text-shadow: 1rem;
     position: absolute;
 }
 /*** content ***/
@@ -46,10 +45,8 @@ section video {
 .contents #paragraph {
     float: left;
     text-align: justify;
-    width: 45%;             /* 45*2  = 90 */
-    padding-left: 2.5%;     /* 2.5*2 = 5 */
-    padding-right: 2.5%;    /* 2.5*2 = 5 */
-    /* 90+5+5 = 100 */
+    width: 45%;             
+    padding: 0 2.5% 0 2.5%;    
 }
 .contents #title {
     font-size: 24px;
@@ -61,4 +58,11 @@ section video {
     object-fit: cover;
     opacity: 0;
     transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .contents #paragraph {
+        width: 100%;
+        padding: 1rem 2.5% 1rem 2.5%;
+    }
 }

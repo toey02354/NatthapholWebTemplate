@@ -1,9 +1,18 @@
 @import "myStyle.css";
 
 .messages {
-    padding-left: 10rem;
-    z-index: 99;
+    padding: 0 2rem 2rem 10%;
+    overflow: hidden;
 }
 .messages .img_about{
     width: 50vw;
+}
+
+@media only screen and (max-width: 600px){
+    .messages {
+        padding: 0 2rem 2rem 2rem;
+    }
+    .messages .img_about {
+        width: 80vw;
+    }
 }

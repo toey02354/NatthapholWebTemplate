@@ -79,27 +79,22 @@ img{
 /********** footer **********/
 .footer{
     background-color: rgb(24, 26, 26);
-    min-height: fit-content;
+    max-height: fit-content;
     letter-spacing: 0.022em;
+    height: 55vh;
 }
 .footer-one{
     margin: none;
     padding: 2% 5% 3% 5%;
     min-height: 200px;
 }
-/* .footer-two{
-    margin: none;
-    padding: 5% 5% 5% 5%;
-    height: 100%;
-    border-top: 2px solid #999999;
-} */
-#text-footer-one {
+.text-footer-one {
     text-align: center;
     justify-items: center;
     padding-bottom: 10px;
     font-size: 30px;
 }
-#text2-footer-one {
+.text2-footer-one {
     font-size: 20px;
 }
 /* footer-one */
@@ -115,7 +110,6 @@ img{
     justify-content: center;
     align-content: center;
     overflow: hidden;
-    
 }
 .facebook {
     border:2px solid #3B5998;
@@ -128,33 +122,28 @@ img{
     text-transform: lowercase;
     padding: 13px 0 7px 0;
 }
-#footer-row #inside-footer-row-contact,
-#footer-row #inside-footer-row-about,
-#footer-row #inside-footer-row-spokenlang,
-#footer-row #inside-footer-row-codinglang{
+.footer-row .inside-footer-row-contact,
+.footer-row .inside-footer-row-about,
+.footer-row .inside-footer-row-spokenlang,
+.footer-row .inside-footer-row-codinglang{
     float: left;
     width: 23%;
     padding: 2% 1% 0 1%;
- }
-
- /* #text-footer-two {
-    text-align: center;
-    justify-items: center;
-    padding-bottom: 10px;
-    font-size: 20px;
 }
- @media only screen and (max-width: 1000px) {
-    .footer-two {
-        border-top: 0;
-    }
- } */
+
+.footer-two{
+    padding: 30px 30px 30px 30px;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+}
 
 /* For Tablet */
 @media only screen and (max-width: 900px) {
-    #footer-row #inside-footer-row-contact,
-    #footer-row #inside-footer-row-about,
-    #footer-row #inside-footer-row-spokenlang,
-    #footer-row #inside-footer-row-codinglang{
+    .footer-row .inside-footer-row-contact,
+    .footer-row .inside-footer-row-about,
+    .footer-row .inside-footer-row-spokenlang,
+    .footer-row .inside-footer-row-codinglang{
         float: left;
         width: 48%;
     }
@@ -172,10 +161,10 @@ img{
     .footer {
         min-height: 55vh;
     }
-    #footer-row #inside-footer-row-contact,
-    #footer-row #inside-footer-row-about,
-    #footer-row #inside-footer-row-spokenlang,
-    #footer-row #inside-footer-row-codinglang{
+    .footer-row .inside-footer-row-contact,
+    .footer-row .inside-footer-row-about,
+    .footer-row .inside-footer-row-spokenlang,
+    .footer-row .inside-footer-row-codinglang{
         float: left;
         display: grid;
     }

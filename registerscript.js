@@ -8,8 +8,11 @@ openLoginRight.addEventListener('click', function () {
 function fullName() {
     let fName = document.forms['myForm']['getName'].value;
     let email = document.forms['myForm']['getEmail'].value;
-    let password1 = document.forms['myForm']['getPassword'].value;
-    let password2 = document.forms['myForm']['getConfirmPassword'].value;
+    // ใช้ได้ทั้งสองแบบ
+    // let password1 = document.forms['myForm']['getPassword'].value;
+    // let password2 = document.forms['myForm']['getConfirmPassword'].value;
+    let password1 = document.getElementById('getPassword').value;
+    let password2 = document.getElementById('getConfirmPassword').value;
 
     if (fName.length < 4) {
         alert("Full Name must be more than 3 letters!");
@@ -19,8 +22,8 @@ function fullName() {
         alert("Email must be more than 3 letters!");
         return false;
     }
-    if (password1.length < 4) {
-        alert("Password must be more than 3 letters!");
+    if (password1.length < 9) {
+        alert("Password must be more than 8 letters!");
         return false;
     }
     if (password1 != password2) {

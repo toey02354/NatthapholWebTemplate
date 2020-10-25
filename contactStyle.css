@@ -1,33 +1,35 @@
 @import "myStyle.css";
 
-body{
+body {
     /* Wind Purple BG */
     /* background: linear-gradient(110deg, #a60af3 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #7a00cc 70%, #c03fff 70%); */
-    
+
     /* Solar BG w/picture */
     /* background: linear-gradient(-70deg, #fa7c30 30%, rgba(0, 0, 0, 0) 30%), url('https://www.nasa.gov/sites/default/files/thumbnails/image/pia21421-cr.jpg');*/
-    
+
     /* 3colors multi-degrees BG*/
     /* background: linear-gradient(70deg, #fff810  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%); */
-    
+
     /* Thai Flag Background*/
-    background: 
-        linear-gradient(110deg, rgb(180, 0, 0) 16.5%, transparent 16.5%), 
-        linear-gradient(110deg, white 33%, transparent 33%), 
-        linear-gradient(110deg, rgb(0, 0, 180) 66%, transparent 66%), 
-        linear-gradient(110deg, white 82.5%, transparent 82.5%), 
+    background:
+        linear-gradient(110deg, rgb(180, 0, 0) 16.5%, transparent 16.5%),
+        linear-gradient(110deg, white 33%, transparent 33%),
+        linear-gradient(110deg, rgb(0, 0, 180) 66%, transparent 66%),
+        linear-gradient(110deg, white 82.5%, transparent 82.5%),
         linear-gradient(110deg, rgb(180, 0, 0) 100%, transparent 100%);
 }
 
-.forms{
+.forms {
     color: rgb(24, 26, 26);
 }
+
 .testforum,
-.getInput{
+.getInput {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 30px;
 }
+
 #getName {
     padding: 5px 7px;
     margin: 0 1rem;
@@ -36,12 +38,15 @@ body{
     border-radius: 0;
     border-bottom: 2px solid rgb(24, 26, 26);
 }
+
 input:placeholder-shown {
     letter-spacing: 0.05em;
 }
+
 #getName:focus {
     outline: none;
 }
+
 #getNameSubmit {
     /* background: inherit; */
     /* color: black; */
@@ -55,6 +60,7 @@ input:placeholder-shown {
     background-color: rgb(24, 26, 26);
     color: white;
 }
+
 .buttonA {
     text-transform: uppercase;
     display: block;

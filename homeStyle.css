@@ -8,6 +8,7 @@
     align-items: center;
     overflow: hidden;
 }
+
 section {
     width: 100%;
     min-height: 100vh;
@@ -16,6 +17,7 @@ section {
     align-items: center;
     overflow: hidden;
 }
+
 section video {
     position: absolute;
     object-fit: cover;
@@ -23,34 +25,42 @@ section video {
     height: 100%;
     z-index: -1;
 }
-.headtext{
+
+.headtext {
     font-size: 40px;
     text-transform: uppercase;
-    letter-spacing: 0.022em;;
+    letter-spacing: 0.022em;
+    ;
     display: flex;
     color: #fff;
     position: absolute;
 }
+
 /*** content ***/
 .contents {
     padding: 80px 40px;
 }
-.contents{
+
+.contents {
     text-align: center;
 }
+
 /* 2 rows */
 .contents .row {
     display: table;
 }
+
 .contents #paragraph {
     float: left;
     text-align: justify;
-    width: 45%;             
-    padding: 0 2.5% 0 2.5%;    
+    width: 45%;
+    padding: 0 2.5% 0 2.5%;
 }
+
 .contents #title {
     font-size: 24px;
 }
+
 .contents .picture1 {
     overflow: hidden;
     display: flex;

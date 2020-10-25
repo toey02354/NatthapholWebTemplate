@@ -1,28 +1,33 @@
 @import "myStyle.css";
 
-.container{
+.container {
     position: relative;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
-    grid-template-rows: minmax(300px,auto-fill);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: minmax(300px, auto-fill);
 }
-.forum img{
+
+.forum img {
     opacity: 0.4;
     cursor: pointer;
 }
-.forum:hover img{
+
+.forum:hover img {
     opacity: 1;
 }
-.forum:hover .message{
+
+.forum:hover .message {
     display: none;
 }
-.forum{
+
+.forum {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.message{
+
+.message {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1rem;

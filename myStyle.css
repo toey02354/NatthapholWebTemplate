@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     background-color: rgb(20, 20, 20);
     color: antiquewhite;
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
-img{
+
+img {
     width: 100%;
 }
+
 /* scroll to top */
 #myBtn {
     display: none;
@@ -21,7 +25,7 @@ img{
     font-size: 12px;
     border: none;
     outline: none;
-    background: linear-gradient(45deg,rgb(51, 105, 51),rgb(30, 82, 30));
+    background: linear-gradient(45deg, rgb(51, 105, 51), rgb(30, 82, 30));
     color: inherit;
     cursor: pointer;
     padding: 10px;
@@ -43,9 +47,11 @@ img{
         linear-gradient(110deg, white 82.5%, transparent 82.5%), 
         linear-gradient(110deg, rgb(180, 0, 0) 100%, transparent 100%); */
 }
+
 .header a.navigatortab {
     display: flex;
 }
+
 .header a.link {
     margin: 0 16px 0 16px;
     letter-spacing: 0.1405em;
@@ -55,6 +61,7 @@ img{
     float: left;
     z-index: 1;
 }
+
 .header a.logo {
     margin: 0 16px 0 16px;
     text-transform: uppercase;
@@ -68,39 +75,45 @@ img{
 .header a.link:hover {
     cursor: pointer;
 }
+
 .header a.login:hover {
     cursor: pointer;
 }
+
 .header a.logo:hover {
     cursor: pointer;
 }
 
 
 /********** footer **********/
-.footer{
+.footer {
     background-color: rgb(24, 26, 26);
     max-height: fit-content;
     letter-spacing: 0.022em;
     height: 55vh;
     display: grid;
 }
-.footer-one{
+
+.footer-one {
     display: block;
     margin: none;
     padding: 2% 5% 3% 5%;
     min-height: 200px;
 }
+
 .text-footer-one {
     text-align: center;
     justify-items: center;
     padding-bottom: 10px;
     font-size: 30px;
 }
+
 .text2-footer-one {
     font-size: 20px;
 }
+
 /* footer-one */
-.buttonD{
+.buttonD {
     display: flex;
     padding: 6px 0 6px 0;
     margin: 2px 0 2px 0;
@@ -113,10 +126,12 @@ img{
     align-content: center;
     overflow: hidden;
 }
+
 .facebook {
-    border:2px solid #3B5998;
+    border: 2px solid #3B5998;
     background: #3B5998;
 }
+
 .email {
     border: 2px solid #790000;
     background: #790000;
@@ -124,16 +139,17 @@ img{
     text-transform: lowercase;
     padding: 13px 0 7px 0;
 }
+
 .footer-row .inside-footer-row-contact,
 .footer-row .inside-footer-row-about,
 .footer-row .inside-footer-row-spokenlang,
-.footer-row .inside-footer-row-codinglang{
+.footer-row .inside-footer-row-codinglang {
     float: left;
     width: 23%;
     padding: 1% 1% 0 1%;
 }
 
-.footer-two{
+.footer-two {
     display: flex;
     padding: 30px 30px 30px 30px;
     justify-content: center;
@@ -144,17 +160,20 @@ img{
 
 /* For Tablet */
 @media only screen and (max-width: 1000px) {
+
     .footer-row .inside-footer-row-contact,
     .footer-row .inside-footer-row-about,
     .footer-row .inside-footer-row-spokenlang,
-    .footer-row .inside-footer-row-codinglang{
+    .footer-row .inside-footer-row-codinglang {
         float: left;
         width: 48%;
     }
+
     .footer {
         min-height: 60vh;
     }
-    .footer-two{
+
+    .footer-two {
         border-top: 0;
     }
 }
@@ -165,16 +184,19 @@ img{
         float: left;
         margin: 14px 16px 14px 16px;
     }
+
     .footer {
         min-height: 55vh;
     }
+
     .footer-row .inside-footer-row-contact,
     .footer-row .inside-footer-row-about,
     .footer-row .inside-footer-row-spokenlang,
-    .footer-row .inside-footer-row-codinglang{
+    .footer-row .inside-footer-row-codinglang {
         display: grid;
     }
-    .footer-two{
+
+    .footer-two {
         border-top: 0;
     }
 

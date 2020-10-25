@@ -82,6 +82,7 @@ img{
     max-height: fit-content;
     letter-spacing: 0.022em;
     height: 55vh;
+    display: grid;
 }
 .footer-one{
     display: block;
@@ -155,7 +156,6 @@ img{
     }
     .footer-two{
         border-top: 0;
-        float: left;
     }
 }
 
@@ -172,12 +172,10 @@ img{
     .footer-row .inside-footer-row-about,
     .footer-row .inside-footer-row-spokenlang,
     .footer-row .inside-footer-row-codinglang{
-        float: left;
         display: grid;
     }
     .footer-two{
         border-top: 0;
-        float: left;
     }
 
 }

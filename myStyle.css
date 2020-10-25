@@ -84,15 +84,15 @@ img{
 }
 .footer-one{
     margin: none;
-    padding: 5% 5% 5% 5%;
+    padding: 2% 5% 3% 5%;
     min-height: 200px;
 }
-.footer-two{
+/* .footer-two{
     margin: none;
     padding: 5% 5% 5% 5%;
     height: 100%;
     border-top: 2px solid #999999;
-}
+} */
 #text-footer-one {
     text-align: center;
     justify-items: center;
@@ -101,20 +101,14 @@ img{
 }
 #text2-footer-one {
     font-size: 20px;
-    padding-bottom: 10px;
-}
-#text-footer-two {
-    text-align: center;
-    justify-items: center;
-    padding-bottom: 10px;
-    font-size: 20px;
 }
 /* footer-one */
 .buttonD{
     display: flex;
-    padding: 6px 0;
-    margin: 2px 0;
-    width: 150px;
+    padding: 6px 0 6px 0;
+    margin: 2px 0 2px 0;
+    width: 200px;
+    height: 30px;
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
@@ -125,42 +119,65 @@ img{
 }
 .facebook {
     border:2px solid #3B5998;
-    /* transition: all 0.5s ease; */
     background: #3B5998;
 }
-.lineM {
-    border: 2px solid #00b900;
-    /* transition: all 0.5s ease; */
-    background: #00b900;
+.email {
+    border: 2px solid #790000;
+    background: #790000;
+    font-size: 13px;
+    text-transform: lowercase;
+    padding: 13px 0 7px 0;
 }
-
-/* footer-one rows divide */
 #footer-row #inside-footer-row-contact,
 #footer-row #inside-footer-row-about,
 #footer-row #inside-footer-row-spokenlang,
 #footer-row #inside-footer-row-codinglang{
     float: left;
-    width: 25%;
+    width: 23%;
+    padding: 2% 1% 0 1%;
  }
 
+ /* #text-footer-two {
+    text-align: center;
+    justify-items: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+ @media only screen and (max-width: 1000px) {
+    .footer-two {
+        border-top: 0;
+    }
+ } */
+
+/* For Tablet */
+@media only screen and (max-width: 900px) {
+    #footer-row #inside-footer-row-contact,
+    #footer-row #inside-footer-row-about,
+    #footer-row #inside-footer-row-spokenlang,
+    #footer-row #inside-footer-row-codinglang{
+        float: left;
+        width: 48%;
+    }
+    .footer {
+        min-height: 60vh;
+    }
+}
+
+/* For Mobile */
 @media only screen and (max-width: 600px) {
     .header a.logo {
         float: left;
         margin: 14px 16px 14px 16px;
     }
     .footer {
-        min-height: 100vh;
+        min-height: 55vh;
     }
     #footer-row #inside-footer-row-contact,
     #footer-row #inside-footer-row-about,
     #footer-row #inside-footer-row-spokenlang,
     #footer-row #inside-footer-row-codinglang{
         float: left;
-        width: 100%;
-    }
-    .footer-two {
-        border-top: 0;
-        float: left;
+        display: grid;
     }
 
 }

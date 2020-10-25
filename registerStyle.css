@@ -1,66 +1,11 @@
-body {
-    background-color: rgb(20, 20, 20);
-    color: antiquewhite;
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
-}
-html {
-    scroll-behavior: smooth;
-}
-
-/*** header ***/
-.header {
-    background-color: brown;
-    font-size: 16px;
-    padding: 14px 16px;
-    overflow: hidden;
-}
-.header a.logo {
-    margin-left: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: antiquewhite;
-    float: left;
-    letter-spacing: 0.1405em;
-}
-.header a.navigatortab {
-    padding-left: 15%;
-    display: inline;
-}
-.header a.link {
-    padding: 10px;
-    letter-spacing: 0.1405em;
-    text-decoration: none;
-    color: inherit;
-}
-.header a.login{
-    letter-spacing: 0.1405em;
-    float: right;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: inherit;
-}
-.header a.login1 {
-    padding-right: 15px;
-    text-decoration: none;
-    color: inherit;
-}
-/* hover */
-.header a.link:hover {
-    cursor: pointer;
-}
-.header a.login:hover {
-    cursor: pointer;
-}
-.header a.logo:hover {
-    cursor: pointer;
-}
+@import "myStyle.css";
 
 /* --------------------------- log in decoration ---------------------- */
 img {
     margin: none;
     width: 100%;
 }
+
 .login-wrapper {
     display: flex;
     justify-content: center;
@@ -76,10 +21,11 @@ img {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.1405em;
-    transition: 770ms cubic-bezier(0.51,0.04,0.12,0.99);
+    transition: 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
     cursor: pointer;
     position: absolute;
 }
+
 .h2 {
     color: white;
     font-size: 20px;
@@ -98,15 +44,17 @@ img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: 770ms cubic-bezier(0.51,0.04,0.12,0.99);
+    transition: 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
 }
+
 .login-left img {
     opacity: 0.3;
     object-fit: cover;
     display: block;
-    transition: 770ms cubic-bezier(0.51,0.04,0.12,0.99);
+    transition: 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
     object-position: left;
 }
+
 /* ********************* */
 /* ส่วนของด้านขวา */
 /* แบบ form */
@@ -118,42 +66,52 @@ img {
     width: 400px;
     height: 75vh;
     transform: translateX(500px) translateZ(0);
-    transition: 770ms cubic-bezier(0.51,0.04,0.12,0.99);
+    transition: 770ms cubic-bezier(0.51, 0.04, 0.12, 0.99);
 
 }
+
 /* ส่วน fill */
 input {
-    border: 0;          /* เอากรอบออก */
-    border-radius: 20px;    /* ขอบโค้งมน */
+    border: 0;
+    /* เอากรอบออก */
+    border-radius: 20px;
+    /* ขอบโค้งมน */
     font-size: 16px;
     font-weight: 300;
     padding: 2px 12px;
     margin-top: 20px;
 }
-input[id="getPassword"]{
+
+input[id="getPassword"] {
     margin-bottom: 20px;
 }
-input[type="text"], 
+
+input[type="text"],
 input[type="password"] {
     background-color: rgb(0, 88, 0);
     color: whitesmoke;
     width: 100%;
     height: 40px;
 }
+
 input:focus {
-    outline: 0;     /* เอากรอบออกตอนที่คลิก fill */
+    outline: 0;
+    /* เอากรอบออกตอนที่คลิก fill */
 }
+
 /* ทำให้ label ไม่แสดงและไม่ทำให้เลื่อนตำแหน่ง elements อื่นๆ */
 
-input:placeholder-shown +label {
+input:placeholder-shown+label {
     opacity: 1;
     transform: translateY(15px);
 }
+
 /* ส่วนของ checkbox */
 input[type="checkbox"]:before {
     content: none;
     border: 1px solid #111;
 }
+
 input[type="checkbox"]:after {
     border: 2px solid green;
     border-right: 0;
@@ -168,9 +126,11 @@ input[type="checkbox"]:after {
     width: 12px;
     transition: 180ms linear;
 }
+
 input[type="checkbox"]:checked::after {
     opacity: 0.8;
 }
+
 /* ส่วของปุ่ม */
 input[type="submit"] {
     color: #fff;
@@ -186,22 +146,27 @@ input[type="submit"] {
     text-transform: uppercase;
     letter-spacing: -0.00933333em;
 }
+
 input[type="submit"]:hover {
     background-color: green;
     border-radius: 20px;
     cursor: pointer;
 }
+
 /* **************** */
 /* .open คือ work with javascript */
 .open .h1 {
     transform: translateX(200px) translateZ(0);
 }
+
 .open .login-left img {
     transform: translateX(280px) translateZ(0px);
 }
-.open .login-left{
+
+.open .login-left {
     transform: translateX(-480px) translateZ(0px);
 }
-.open .login-right{
+
+.open .login-right {
     transform: translateX(0px) translateZ(0px);
 }

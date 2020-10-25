@@ -23,16 +23,16 @@
       <div id="test">Test Buttons</div>
       <p id="test2"></p>
       <p id="name"></p>
-      <button class="buttonA" type="button" onclick="test1()">test</button>
-      <button class="buttonA" type="button" onclick="test2()">test2</button>
-      <button class="buttonA" type="button" onclick="alert_test()">alert test</button>
-      <button class="buttonA" type="button" onclick="name1()">my name</button>
+      <button class="buttonA butTest1" type="button" onclick="test1()">test1</button>
+      <button class="buttonA butTest2" type="button" onclick="test2()">test2</button>
+      <button class="buttonA butAlert" type="button" onclick="alert_test()">alert test</button>
+      <button class="buttonA butnName" type="button" onclick="name1()">my name</button>
     </div>
 
     <div class="getInput">
       <form onsubmit="return name3()" name="myForm" method="POST" action="contactAction.php">
         <label>Name:</label>
-        <input type="text" id="getName" name="getName" placeholder="Enter your Full Name">
+        <input type="text" id="getNameTest" name="getNameTest" placeholder="Enter your Full Name">
         <input type="submit" id="getNameSubmit" value="Submit">
         <p id="printName"></p>
       </form>
@@ -45,7 +45,7 @@
     w3.includeHTML()
   </script>
   <!-- End of every Page Copy -->
-
+  <script src="contactScript.js"></script>
 </body>
 
 </html>

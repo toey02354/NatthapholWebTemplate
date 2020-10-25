@@ -6,7 +6,6 @@ window.addEventListener('scroll', () => {
     let scrollvalue = window.scrollY;
     opacityValue1 = 1 - scrollvalue / fadeDivider;
     opacityValue2 = scrollvalue / fadeDivider2;
-    console.log(scrollvalue)
     if (scrollvalue >= 100) {
         video.style.opacity = opacityValue1;
     }

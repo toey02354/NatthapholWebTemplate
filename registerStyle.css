@@ -1,6 +1,5 @@
 @import "myStyle.css";
 
-/* --------------------------- log in decoration ---------------------- */
 img {
     margin: none;
     width: 100%;
@@ -55,7 +54,6 @@ img {
     object-position: left;
 }
 
-/* ********************* */
 /* ส่วนของด้านขวา */
 /* แบบ form */
 .login-right {
@@ -78,7 +76,7 @@ input {
     /* ขอบโค้งมน */
     font-size: 16px;
     font-weight: 300;
-    padding: 2px 12px;
+    padding: 2px 0 2px 20px;
     margin-top: 20px;
 }
 
@@ -88,7 +86,7 @@ input[id="getPassword"] {
 
 input[type="text"],
 input[type="password"] {
-    background-color: rgb(0, 88, 0);
+    background-color: rgb(0, 94, 0);
     color: whitesmoke;
     width: 100%;
     height: 40px;
@@ -99,36 +97,10 @@ input:focus {
     /* เอากรอบออกตอนที่คลิก fill */
 }
 
-/* ทำให้ label ไม่แสดงและไม่ทำให้เลื่อนตำแหน่ง elements อื่นๆ */
-
-input:placeholder-shown+label {
-    opacity: 1;
-    transform: translateY(15px);
-}
-
 /* ส่วนของ checkbox */
 input[type="checkbox"]:before {
     content: none;
     border: 1px solid #111;
-}
-
-input[type="checkbox"]:after {
-    border: 2px solid green;
-    border-right: 0;
-    border-top: 0;
-    display: block;
-    height: 4px;
-    left: 4px;
-    opacity: 0;
-    position: absolute;
-    top: 6px;
-    transform: rotate(-45deg);
-    width: 12px;
-    transition: 180ms linear;
-}
-
-input[type="checkbox"]:checked::after {
-    opacity: 0.8;
 }
 
 /* ส่วของปุ่ม */
@@ -136,6 +108,7 @@ input[type="submit"] {
     color: #fff;
     font-size: 20px;
     border: 0;
+    outline: 0;
     border-radius: 2px;
     height: 40px;
     margin-top: 20px;
@@ -153,7 +126,6 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-/* **************** */
 /* .open คือ work with javascript */
 .open .h1 {
     transform: translateX(200px) translateZ(0);

@@ -21,7 +21,5 @@ function fullName() {
     if (password.length < 4) {
         alert("Password must be more than 3 letters!");
         return false;
-    } else {
-        alert("Thank You!");
     }
 }

@@ -1,15 +1,27 @@
 @import "myStyle.css";
 
+body {
+    background: linear-gradient(70deg, #a73939 40%, transparent 40%), linear-gradient(130deg, #427e59 60%, #9ddefc 60%);
+}
+
 .messages {
-    padding: 0 2rem 2rem 10%;
     overflow: hidden;
+    padding: 10px;
+    margin: 2rem auto 2rem auto;
+    display: block;
+    justify-items: center;
+    width: fit-content;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.08);
+    background: rgba(0,0,0,0.1);
 }
 
 .messages .img_about {
-    width: 50vw;
+    width: 42vw;
 }
-
-.test {
+.name{
+    color: inherit;
+}
+.speak {
     animation: bigSmall 2s;
 }
 
@@ -25,8 +37,8 @@
 
 @keyframes bigSmall {
     from {
-        font-size: 50px;
-        color: blue;
+        font-size: 30px;
+        color: red;
     }
 
     to {

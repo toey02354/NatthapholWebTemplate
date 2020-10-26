@@ -9,6 +9,10 @@
     width: 50vw;
 }
 
+.test{
+    animation: bigSmall 2s;
+}
+
 @media only screen and (max-width: 600px) {
     .messages {
         padding: 0 2rem 2rem 2rem;
@@ -16,5 +20,15 @@
 
     .messages .img_about {
         width: 80vw;
+    }
+}
+
+@keyframes bigSmall{
+    from {
+        font-size: 50px;
+        color: blue;
+    }
+    to{
+        font-size: 16px;
     }
 }

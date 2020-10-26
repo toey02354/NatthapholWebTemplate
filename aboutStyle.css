@@ -17,6 +17,9 @@ body {
 
 .messages .img_about {
     width: 42vw;
+    display: flex;
+    margin: auto;
+
 }
 .name{
     color: inherit;

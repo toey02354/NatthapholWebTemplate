@@ -90,7 +90,7 @@ img {
     background-color: rgb(24, 26, 26);
     max-height: fit-content;
     letter-spacing: 0.022em;
-    height: 55vh;
+    height: 100%;
     display: grid;
 }
 

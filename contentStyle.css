@@ -28,6 +28,7 @@
 }
 
 .message {
+    display: none;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.1rem;

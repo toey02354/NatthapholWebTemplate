@@ -5,7 +5,7 @@ function test1() {
     window.alert("Hello by windows.alert");
 }
 function test2(){
-    console.log(reactVersion);
+    console.log("Hello in console");
 }
 function name1() {
     alert(myName);

@@ -12,4 +12,7 @@ window.addEventListener('scroll', () => {
     if (scrollvalue >= 900) {
         piceo.style.opacity = opacityValue2;
     }
+    if (scrollvalue < 100) {
+	video.style.opacity = 1;
+    }
 })
